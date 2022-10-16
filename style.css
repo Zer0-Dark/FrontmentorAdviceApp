@@ -1,0 +1,102 @@
+body {
+  background-color: #202632;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.advice {
+  border: 3px hsl(150, 100%, 66%) solid;
+  position: relative;
+  background-color: #313a49;
+  height: 340px;
+  width: 500px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-transform: translateY();
+  -moz-transform: translateY();
+  -ms-transform: translateY();
+  -o-transform: translateY();
+}
+@media (max-width: 700px) {
+  .advice {
+    width: 300px;
+    height: 450px;
+  }
+}
+.advice p:first-child {
+  color: hsl(150, 100%, 66%);
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin-top: 40px;
+}
+.advice button {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translateX(-50%);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.advice button:hover {
+  box-shadow: 0 0 15px 2px hsl(150, 100%, 66%);
+}
+#advice {
+  color: hsl(193, 38%, 86%);
+  font-family: "Manrope", sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-height: 180px;
+  overflow: hidden;
+}
+@media (max-width: 700px) {
+  #advice {
+    max-height: 270px;
+    font-size: 23px;
+  }
+}   
+
+
+
+
+
+.design {
+  position: absolute;
+  top: 78%;
+}
+@media (max-width: 700px) {
+  .design img {
+    width: calc(300px - 30px);
+  }
+}
