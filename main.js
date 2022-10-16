@@ -22,4 +22,4 @@ function getDataFromApi() {
 
 }
 randomButton.addEventListener("click", getDataFromApi);
-// getDataFromApi();
+getDataFromApi();
